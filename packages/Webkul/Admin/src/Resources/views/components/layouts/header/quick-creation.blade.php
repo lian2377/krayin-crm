@@ -364,9 +364,6 @@
                             organization: "{{ route('admin.contacts.organizations.store') }}",
                             product:      "{{ route('admin.products.store') }}",
                             mail:         "{{ route('admin.mail.store') }}",
-                            attribute:    "{{ route('admin.settings.attributes.store') }}",
-                            role:         "{{ route('admin.settings.roles.store') }}",
-                            user:         "{{ route('admin.settings.users.store') }}",
                         },
                     };
                 },
@@ -399,9 +396,6 @@
                     createOrganization(params, { setErrors }) { this.store('organization', setErrors); },
                     createProduct(params, { setErrors })      { this.store('product', setErrors); },
                     createMail(params, { setErrors })         { this.store('mail', setErrors); },
-                    createAttribute(params, { setErrors })    { this.store('attribute', setErrors); },
-                    createRole(params, { setErrors })         { this.store('role', setErrors); },
-                    createUser(params, { setErrors })         { this.store('user', setErrors); },
 
                     store(type, setErrors) {
                         const formEl = this.$refs[this.formRefFor(type)];

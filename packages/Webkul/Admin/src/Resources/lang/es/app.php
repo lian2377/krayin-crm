@@ -1966,6 +1966,8 @@ return [
                         'logo-image' => 'Imagen del Logo',
                         'title' => 'Logo del Administrador',
                         'title-info' => 'Configura la imagen del logo para tu panel de administración.',
+                        'favicon-image' => 'Imagen del Favicon',
+                        'favicon-image-info' => 'Configura la imagen del favicon para tu panel de administración.',
                     ],
                 ],
                 'settings' => [
@@ -1997,7 +1999,7 @@ return [
                         'trash' => 'Papelera',
                     ],
                     'menu-color' => [
-                        'brand-color' => 'Brand Color',
+                        'brand-color' => 'Color de Marca',
                         'info' => 'Podemos cambiar los colores de los elementos del menú aquí.',
                         'title' => 'Configuraciones de Color de Elementos del Menú',
                     ],
