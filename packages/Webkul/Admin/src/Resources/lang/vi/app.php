@@ -33,6 +33,7 @@ return [
         'tags' => 'Thẻ',
         'configuration' => 'Cấu hình',
         'create' => 'Tạo mới',
+        'quick_add' => 'Thêm Nhanh',
         'edit' => 'Chỉnh sửa',
         'view' => 'Xem',
         'print' => 'In',
@@ -1369,6 +1370,7 @@ return [
                     'is-default' => 'Mặc Định',
                     'edit' => 'Chỉnh sửa',
                     'delete' => 'Xóa',
+                    'quick-add' => 'Thêm Nhanh',
                     'entity-types' => [
                         'leads' => 'Khách hàng tiềm năng',
                         'organizations' => 'Tổ chức',
@@ -1401,6 +1403,7 @@ return [
                 'save-btn' => 'Lưu Thuộc Tính',
                 'code' => 'Mã',
                 'name' => 'Tên',
+                'quick_add' => 'Thêm Nhanh',
                 'entity-type' => 'Loại Thực Thể',
                 'type' => 'Loại',
                 'validations' => 'Xác Thực',
@@ -1466,8 +1469,9 @@ return [
                 'lookup-type' => 'Loại Tra Cứu',
                 'multiselect' => 'Chọn Nhiều',
                 'name' => 'Tên',
+                'quick_add' => 'Thêm Nhanh',
                 'numeric' => 'Số',
-                'option-deleted' => 'Attribute Option is deleted successfully',
+                'option-deleted' => 'Tùy Chọn Thuộc Tính đã được xóa thành công',
                 'option-name' => 'Tên Tùy Chọn',
                 'option-type' => 'Loại Tùy Chọn',
                 'options' => 'Tùy Chọn',
@@ -1677,7 +1681,6 @@ return [
                 'delete' => 'Xóa',
             ],
         ],
-
         'create-success' => 'Email đã được gửi thành công.',
         'update-success' => 'Email đã được cập nhật thành công.',
         'mass-update-success' => 'Các email đã được cập nhật thành công.',
@@ -1685,7 +1688,6 @@ return [
         'delete-failed' => 'Email không thể bị xóa.',
         'invalid-route' => 'Đường dẫn không hợp lệ cho email.',
         'unauthorized' => 'Hành động này không được phép.',
-
         'view' => [
             'title' => 'Thư',
             'subject' => ':subject',
@@ -1918,6 +1920,12 @@ return [
             'persons' => [
                 'title' => 'Về Người Liên Hệ',
                 'job-title' => ':job_title tại :organization',
+                'no-person' => 'Chưa có người liên hệ nào được gán cho lead này.',
+                'attach-btn' => 'Gắn Người Liên Hệ',
+                'change-btn' => 'Thay Đổi',
+                'change-title' => 'Thay Đổi Người Liên Hệ',
+                'save-btn' => 'Lưu',
+                'cancel-btn' => 'Hủy',
             ],
             'stages' => [
                 'won' => 'Thắng',
@@ -2125,6 +2133,13 @@ return [
         'users-info' => 'Thêm, chỉnh sửa hoặc xóa người dùng khỏi CRM',
         'lead' => 'Lead',
         'lead-info' => 'Quản lý tất cả các cài đặt liên quan đến leads trong CRM',
+        'quick-add' => [
+            'title' => 'Thêm nhanh',
+            'save' => 'Lưu',
+            'to' => 'Đến',
+            'subject' => 'Tiêu đề',
+            'message' => 'Tin nhắn',
+        ],
         'pipelines' => 'Pipelines',
         'pipelines-info' => 'Thêm, chỉnh sửa hoặc xóa pipelines khỏi CRM',
         'sources' => 'Nguồn',

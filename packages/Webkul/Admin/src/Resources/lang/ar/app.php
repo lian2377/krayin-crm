@@ -33,6 +33,7 @@ return [
         'tags' => 'الوسوم',
         'configuration' => 'التهيئة',
         'create' => 'إنشاء',
+        'quick_add' => 'إضافة سريعة',
         'edit' => 'تعديل',
         'view' => 'عرض',
         'print' => 'طباعة',
@@ -1369,6 +1370,7 @@ return [
                     'is-default' => 'افتراضي',
                     'edit' => 'تعديل',
                     'delete' => 'حذف',
+                    'quick-add' => 'إضافة سريعة',
                     'entity-types' => [
                         'leads' => 'العملاء المحتملين',
                         'organizations' => 'المنظمات',
@@ -1401,6 +1403,7 @@ return [
                 'save-btn' => 'حفظ السمة',
                 'code' => 'الرمز',
                 'name' => 'الاسم',
+                'quick_add' => 'إضافة سريعة',
                 'entity-type' => 'نوع الكيان',
                 'type' => 'النوع',
                 'validations' => 'التحققات',
@@ -1466,8 +1469,9 @@ return [
                 'lookup-type' => 'نوع البحث',
                 'multiselect' => 'اختيار متعدد',
                 'name' => 'الاسم',
+                'quick_add' => 'إضافة سريعة',
                 'numeric' => 'رقمي',
-                'option-deleted' => 'Attribute Option is deleted successfully',
+                'option-deleted' => 'تم حذف خيار السمة بنجاح',
                 'option-name' => 'اسم الخيار',
                 'option-type' => 'نوع الخيار',
                 'options' => 'الخيارات',
@@ -1677,7 +1681,6 @@ return [
                 'delete' => 'حذف',
             ],
         ],
-
         'create-success' => 'تم إرسال البريد الإلكتروني بنجاح.',
         'update-success' => 'تم تحديث البريد الإلكتروني بنجاح.',
         'mass-update-success' => 'تم تحديث البريد الإلكتروني بنجاح.',
@@ -1685,7 +1688,6 @@ return [
         'delete-failed' => 'لا يمكن حذف البريد الإلكتروني.',
         'invalid-route' => 'مسار غير صالح للبريد.',
         'unauthorized' => 'هذا الإجراء غير مصرح به.',
-
         'view' => [
             'title' => 'الرسائل',
             'subject' => ':الموضوع',
@@ -1918,6 +1920,12 @@ return [
             'persons' => [
                 'title' => 'حول الأشخاص',
                 'job-title' => ':job_title في :organization',
+                'no-person' => 'لم يتم تعيين جهة اتصال لهذه الفرصة.',
+                'attach-btn' => 'إرفاق جهة اتصال',
+                'change-btn' => 'تغيير',
+                'change-title' => 'تغيير جهة الاتصال',
+                'save-btn' => 'حفظ',
+                'cancel-btn' => 'إلغاء',
             ],
             'stages' => [
                 'won' => 'ربحت',
@@ -2125,6 +2133,13 @@ return [
         'users-info' => 'إضافة أو تعديل أو حذف المستخدمين من نظام CRM',
         'lead' => 'عميل محتمل',
         'lead-info' => 'إدارة جميع إعدادات العملاء المحتملين الخاصة بك في نظام CRM',
+        'quick-add' => [
+            'title' => 'إضافة سريعة',
+            'save' => 'حفظ',
+            'to' => 'إلى',
+            'subject' => 'الموضوع',
+            'message' => 'الرسالة',
+        ],
         'pipelines' => 'الأنابيب',
         'pipelines-info' => 'إضافة أو تعديل أو حذف الأنابيب من نظام CRM',
         'sources' => 'المصادر',

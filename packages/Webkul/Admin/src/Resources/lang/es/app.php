@@ -33,6 +33,7 @@ return [
         'tags' => 'Etiquetas',
         'configuration' => 'Configuración',
         'create' => 'Crear',
+        'quick_add' => 'Agregar Rápido',
         'edit' => 'Editar',
         'view' => 'Ver',
         'print' => 'Imprimir',
@@ -1369,6 +1370,7 @@ return [
                     'is-default' => 'Es Predeterminado',
                     'edit' => 'Editar',
                     'delete' => 'Eliminar',
+                    'quick-add' => 'Agregar Rápido',
                     'entity-types' => [
                         'leads' => 'Clientes potenciales',
                         'organizations' => 'Organizaciones',
@@ -1401,6 +1403,7 @@ return [
                 'save-btn' => 'Guardar Atributo',
                 'code' => 'Código',
                 'name' => 'Nombre',
+                'quick_add' => 'Añadir Rápido',
                 'entity-type' => 'Tipo de Entidad',
                 'type' => 'Tipo',
                 'validations' => 'Validaciones',
@@ -1466,8 +1469,9 @@ return [
                 'lookup-type' => 'Tipo de Búsqueda',
                 'multiselect' => 'Selección Múltiple',
                 'name' => 'Nombre',
+                'quick_add' => 'Añadir Rápido',
                 'numeric' => 'Numérico',
-                'option-deleted' => 'Attribute Option is deleted successfully',
+                'option-deleted' => 'Opción de Atributo eliminada con éxito',
                 'option-name' => 'Nombre de Opción',
                 'option-type' => 'Tipo de Opción',
                 'options' => 'Opciones',
@@ -1677,7 +1681,6 @@ return [
                 'delete' => 'Eliminar',
             ],
         ],
-
         'create-success' => 'Correo enviado con éxito.',
         'update-success' => 'Correo actualizado con éxito.',
         'mass-update-success' => 'Correos actualizados con éxito.',
@@ -1685,7 +1688,6 @@ return [
         'delete-failed' => 'No se puede eliminar el correo.',
         'invalid-route' => 'Ruta inválida para el correo.',
         'unauthorized' => 'Esta acción no está autorizada.',
-
         'view' => [
             'title' => 'Correos',
             'subject' => ':subject',
@@ -1918,6 +1920,12 @@ return [
             'persons' => [
                 'title' => 'Sobre las Personas',
                 'job-title' => ':job_title en :organization',
+                'no-person' => 'No se ha asignado ninguna persona de contacto a este lead.',
+                'attach-btn' => 'Adjuntar Persona de Contacto',
+                'change-btn' => 'Cambiar',
+                'change-title' => 'Cambiar Persona de Contacto',
+                'save-btn' => 'Guardar',
+                'cancel-btn' => 'Cancelar',
             ],
             'stages' => [
                 'won' => 'Ganado',
@@ -2125,6 +2133,13 @@ return [
         'users-info' => 'Agregar, editar o eliminar usuarios del CRM',
         'lead' => 'Lead',
         'lead-info' => 'Administra todas las configuraciones relacionadas con los leads en el CRM',
+        'quick-add' => [
+            'title' => 'Añadir rápido',
+            'save' => 'Guardar',
+            'to' => 'Para',
+            'subject' => 'Asunto',
+            'message' => 'Mensaje',
+        ],
         'pipelines' => 'Pipelines',
         'pipelines-info' => 'Agregar, editar o eliminar pipelines del CRM',
         'sources' => 'Fuentes',

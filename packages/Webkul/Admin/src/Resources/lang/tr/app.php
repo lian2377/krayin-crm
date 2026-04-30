@@ -33,6 +33,7 @@ return [
         'tags' => 'Etiketler',
         'configuration' => 'Yapılandırma',
         'create' => 'Oluştur',
+        'quick_add' => 'Hızlı Ekle',
         'edit' => 'Düzenle',
         'view' => 'Görüntüle',
         'print' => 'Yazdır',
@@ -1053,7 +1054,6 @@ return [
                     'delete-success' => 'Kampanya başarıyla silindi.',
                     'delete-failed' => 'Kampanya silinemedi.',
                     'mass-delete-success' => 'Kampanyalar başarıyla silindi',
-
                     'datagrid' => [
                         'id' => 'ID',
                         'name' => 'Ad',
@@ -1370,6 +1370,7 @@ return [
                     'is-default' => 'Varsayılan mı',
                     'edit' => 'Düzenle',
                     'delete' => 'Sil',
+                    'quick-add' => 'Hızlı Ekle',
                     'entity-types' => [
                         'leads' => 'Potansiyeller',
                         'organizations' => 'Organizasyonlar',
@@ -1402,6 +1403,7 @@ return [
                 'save-btn' => 'Özniteliği Kaydet',
                 'code' => 'Kod',
                 'name' => 'Ad',
+                'quick_add' => 'Hızlı Ekle',
                 'entity-type' => 'Varlık Türü',
                 'type' => 'Tür',
                 'validations' => 'Doğrulamalar',
@@ -1467,8 +1469,9 @@ return [
                 'lookup-type' => 'Arama Türü',
                 'multiselect' => 'Çoklu Seçim',
                 'name' => 'Ad',
+                'quick_add' => 'Hızlı Ekle',
                 'numeric' => 'Sayısal',
-                'option-deleted' => 'Attribute Option is deleted successfully',
+                'option-deleted' => 'Öznitelik Seçeneği başarıyla silindi',
                 'option-name' => 'Seçenek Adı',
                 'option-type' => 'Seçenek Türü',
                 'options' => 'Seçenekler',
@@ -1678,7 +1681,6 @@ return [
                 'delete' => 'Sil',
             ],
         ],
-
         'create-success' => 'E-posta başarıyla gönderildi.',
         'update-success' => 'E-posta başarıyla güncellendi.',
         'mass-update-success' => 'E-postalar başarıyla güncellendi.',
@@ -1686,7 +1688,6 @@ return [
         'delete-failed' => 'E-posta silinemedi.',
         'invalid-route' => 'Geçersiz rota için mail.',
         'unauthorized' => 'Bu işlem yetkilendirilmemiştir.',
-
         'view' => [
             'title' => 'Mails',
             'subject' => ':subject',
@@ -1919,6 +1920,12 @@ return [
             'persons' => [
                 'title' => 'Kişiler Hakkında',
                 'job-title' => ':job_title @ :organization',
+                'no-person' => 'Bu potansiyel müşteriye atanmış bir iletişim kişisi yok.',
+                'attach-btn' => 'İletişim Kişisi Ekle',
+                'change-btn' => 'Değiştir',
+                'change-title' => 'İletişim Kişisini Değiştir',
+                'save-btn' => 'Kaydet',
+                'cancel-btn' => 'İptal',
             ],
             'stages' => [
                 'won' => 'Kazandı',
@@ -2126,6 +2133,13 @@ return [
         'users-info' => 'CRM’den kullanıcıları ekleyin, düzenleyin veya silin',
         'lead' => 'Lead',
         'lead-info' => 'CRM’de tüm lead ayarlarınızı yönetin',
+        'quick-add' => [
+            'title' => 'Hızlı Ekle',
+            'save' => 'Kaydet',
+            'to' => 'Kime',
+            'subject' => 'Konu',
+            'message' => 'Mesaj',
+        ],
         'pipelines' => 'Pipeline’lar',
         'pipelines-info' => 'CRM’den pipeline’ları ekleyin, düzenleyin veya silin',
         'sources' => 'Kaynaklar',
