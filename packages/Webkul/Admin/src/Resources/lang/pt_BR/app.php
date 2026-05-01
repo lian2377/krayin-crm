@@ -1781,7 +1781,7 @@ return [
                 'contact-person' => 'Pessoa de Contato',
                 'stage' => 'Etapa',
                 'rotten-lead' => 'Negócio estagnado',
-                'date-to' => 'Data fechamento',
+                'date-to' => 'Data esperada de fechamento',
                 'created-at' => 'Criado em',
                 'no' => 'Não',
                 'yes' => 'Sim',
@@ -1803,7 +1803,7 @@ return [
                     'source' => 'Origem',
                     'title' => 'Título',
                     'tags' => 'Tags',
-                    'expected-close-date' => 'Data Esperada de Fechamento',
+                    'expected-close-date' => 'Data esperada de fechamento',
                     'created-at' => 'Criado em',
                 ],
                 'toolbar' => [
