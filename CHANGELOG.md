@@ -2,6 +2,10 @@
 
 This changelog consists of the bug & security fixes and new features being included in the releases listed below.
 
+## **v2.2.3 (1st of May 2026)** *Release*
+
+* [fixed] Pipline critical issue resolved.
+
 ## **v2.2.2 (1st of May 2026)** *Release*
 
 * [fixed] Update Change Log and version.
