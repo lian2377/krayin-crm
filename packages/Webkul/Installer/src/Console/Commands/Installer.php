@@ -129,8 +129,10 @@ class Installer extends Command
 
         $this->loadEnvConfigAtRuntime();
 
-        $this->warn('Step: Generating key...');
-        $this->call('key:generate');
+        if (! $this->getEnvAtRuntime('APP_KEY')) {
+            $this->warn('Step: Generating key...');
+            $this->call('key:generate');
+        }
 
         $this->warn('Step: Migrating all tables...');
         $this->call('migrate:fresh');

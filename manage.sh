@@ -33,7 +33,18 @@ env_value() {
 ensure_env() {
     if [[ ! -f .env ]]; then
         cp .env.example .env
-        echo "Created .env from .env.example. Update DB and domain-related values before installation."
+        echo "Created .env from .env.example. Review and update values before proceeding."
+    fi
+}
+
+ensure_app_key() {
+    local current_key
+    current_key="$(env_value APP_KEY)"
+
+    if [[ -z "${current_key}" ]]; then
+        local new_key="base64:$(openssl rand -base64 32)"
+        sed -i "s|^APP_KEY=.*|APP_KEY=${new_key}|" .env
+        echo "Generated APP_KEY."
     fi
 }
 
@@ -67,7 +78,7 @@ Commands:
   ps              Show service status
   shell           Open a shell inside the app container
   artisan ...     Run an artisan command inside the app container
-  install         Run the Krayin installer inside the app container
+  install         First-time setup: prepare .env, generate APP_KEY, run migrations and create admin
   test            Run php artisan test inside the app container
 EOF
 }
@@ -110,9 +121,10 @@ case "${command}" in
         ;;
     install)
         ensure_env
+        ensure_app_key
         warn_proxy_env
-        compose up -d db app nginx
-        compose exec app php artisan krayin-crm:install
+        compose up -d
+        compose exec app php artisan krayin-crm:install --skip-env-check
         ;;
     test)
         ensure_env
