@@ -37,6 +37,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     && docker-php-ext-configure imap --with-kerberos --with-imap-ssl \
     && docker-php-ext-install -j"$(nproc)" \
         bcmath \
+        calendar \
         exif \
         gd \
         imap \
