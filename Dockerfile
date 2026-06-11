@@ -12,7 +12,7 @@ RUN npm install \
     && cd /workspace/packages/Webkul/Installer && npm install && npm run build \
     && cd /workspace/packages/Webkul/WebForm && npm install && npm run build
 
-FROM php:8.3-apache
+FROM php:8.3-apache-bookworm
 
 ARG DEBIAN_FRONTEND=noninteractive
 ARG APACHE_DOCUMENT_ROOT=/var/www/html/public
