@@ -82,7 +82,7 @@ case "${command}" in
     up)
         ensure_env
         warn_proxy_env
-        compose up -d --build
+        compose up -d
         ;;
     down)
         compose down
@@ -111,7 +111,7 @@ case "${command}" in
     install)
         ensure_env
         warn_proxy_env
-        compose up -d --build db app nginx
+        compose up -d db app nginx
         compose exec app php artisan krayin-crm:install
         ;;
     test)
