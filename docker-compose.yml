@@ -43,7 +43,7 @@ services:
       LETSENCRYPT_HOST: ${DOMAIN_NAME:-localhost}
       LETSENCRYPT_EMAIL: ${LETSENCRYPT_EMAIL:-}
     volumes:
-      - ./docker/nginx/default.conf:/etc/nginx/conf.d/default.conf:ro
+      - ./docker/nginx:/etc/nginx/conf.d:ro
     networks:
       - internal
       - nginx-proxy
